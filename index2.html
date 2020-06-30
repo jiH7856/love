@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Nav bar</title>
+    <script
+     src="https://kit.fontawesome.com/2d323a629b.js"
+     crossorigin="anonymous"
+    ></script>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        a{ 
+            text-decoration: none;
+            color: white;
+        }
+        .꽃님 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #263343;
+            padding: 8px 12px;
+        }
+
+        .꽃님__logo {
+            font-size: 24px;
+            color: white;
+        }
+
+        .꽃님__logo i {
+            color: #d49466;
+        }
+
+        .꽃님__menu {
+            display: flex;
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .꽃님__menu li {
+            padding: 8px 12px;
+        }
+
+        .꽃님__menu li:hover {
+            background-color: #d49466;
+            border-radius: 4px;
+        }
+
+        .꽃님__icons {
+            list-style: none;
+            color: white;
+            display: flex;
+            padding-left: 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            .꽃님{
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 8px 24px;
+            }
+
+            .꽃님__menu {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+
+            .꽃님__menu li {
+                width: 100%;
+                text-align: center;
+            }
+
+            .꽃님__icons {
+                justify-content: center;
+                width: 100%;
+            }
+            
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <nav class="꽃님">
+        <div class="꽃님__logo">
+           <i class="fab fa-accusoft"></i>
+           <a href="">DreamCodingg</a>
+         </div>
+
+        <ul class="꽃님__menu">
+          <li><a href="">Home</a></li>
+          <li><a href="">Gallery</a></li>
+          <li><a href="">Weddings</a></li>
+          <li><a href="">FAQ</a></li>
+          <li><a href="">Bookings</a></li>
+        </ul>
+
+        <ul class="꽃님__icons">
+          <li><i class="fab fa-twitter"></i></li>
+          <li><i class="fab fa-facebook-f"></i></li>
+        </ul>
+    </nav>
+</body>
+</html>
